@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="aircraftCarrier" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\vesselImages\aircraftCarrier.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aircraftCarrierHorizontal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\vesselImagesHorizontal\aircraftCarrierHorizontal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aircraftCarrierShape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\vesselShapes\aircraftCarrierShape.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aircraftCarrierWithGreenSkin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\vesselImagesWithGreenSkins\aircraftCarrierWithGreenSkin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="audioOffImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\buttonsImages\audioOffImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="audioOnImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\buttonsImages\audioOnImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="battleShip" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\vesselImages\battleShip.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="battleShipHorizontal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\vesselImagesHorizontal\battleShipHorizontal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="battleShipShape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\vesselShapes\battleShipShape.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="battleShipWithGreenSkin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\vesselImagesWithGreenSkins\battleShipWithGreenSkin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonClickSound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\AudioResources\buttonClickSound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cheatButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\buttonsImages\cheatButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="controlPanelBackgroundCentralMenu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\BackgroundImages\controlPanelBackgroundCentralMenu.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="controlPanelBackGroundImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\BackgroundImages\controlPanelBackGroundImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="corvette" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\vesselImages\corvette.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="corvetteHorizontal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\vesselImagesHorizontal\corvetteHorizontal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="corvetteShape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\vesselShapes\corvetteShape.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="corvetteWithGreenSkin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\vesselImagesWithGreenSkins\corvetteWithGreenSkin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="defaultSizeButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\buttonsImages\defaultSizeButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="destroyedTile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\battleTiles\destroyedTile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="destroyer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\vesselImages\destroyer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="destroyerHorizontal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\vesselImagesHorizontal\destroyerHorizontal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="destroyerShape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\vesselShapes\destroyerShape.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="destroyerWithGreenSKin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\vesselImagesWithGreenSkins\destroyerWithGreenSKin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemyFleetPanelBigShips" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipPanelsStatusImages\enemyFleetBigShips\enemyFleetPanelBigShips.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemyFleetPanelSmallerShips" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipPanelsStatusImages\enemyFleetSmallShips\enemyFleetPanelSmallerShips.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exitButtonImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\buttonsImages\exitButtonImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="frigate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\vesselImages\frigate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="frigateHorizontal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\vesselImagesHorizontal\frigateHorizontal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="frigateShape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\vesselShapes\frigateShape.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="frigateWithGreenSkin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\vesselImagesWithGreenSkins\frigateWithGreenSkin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fullScreenButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\buttonsImages\fullScreenButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gameOverSound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\AudioResources\gameOverSound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="gameStartingMenuImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\BackgroundImages\gameStartingMenuImage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hitTile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\battleTiles\hitTile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mainSoundTrack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\AudioResources\mainSoundTrack.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="minizeButtonImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\buttonsImages\minizeButtonImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="missisleExplosionSound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\AudioResources\missisleExplosionSound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="missisleLaunchSound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\AudioResources\missisleLaunchSound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="missisleMissSound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\AudioResources\missisleMissSound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="missisleSinkSound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\AudioResources\missisleSinkSound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="missisleTorpedoSound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\AudioResources\missisleTorpedoSound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="myFleetPanelBiggerShips" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipPanelsStatusImages\myFleetBigShips\myFleetPanelBiggerShips.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="myFleetPanelSmallerShips" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipPanelsStatusImages\myFleetSmallShips\myFleetPanelSmallerShips.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="occupiedAreaTile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\occupiedAreaTile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="playButtonImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\buttonsImages\playButtonImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="resetFormationButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\buttonsImages\resetFormationButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rotateImageButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\buttonsImages\rotateImageButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="setRandomFormationButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\buttonsImages\setRandomFormationButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="submarine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\vesselImages\submarine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="submarineHorizontal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\vesselImagesHorizontal\submarineHorizontal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="submarineShape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\vesselShapes\submarineShape.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="submarineWithGreenSkin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\vesselImagesWithGreenSkins\submarineWithGreenSkin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="surface0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\backgroundSurfaceForGameFormImages\surface0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="surface1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\backgroundSurfaceForGameFormImages\surface1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="surface10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\backgroundSurfaceForGameFormImages\surface10.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="surface11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\backgroundSurfaceForGameFormImages\surface11.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="surface12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\backgroundSurfaceForGameFormImages\surface12.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="surface13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\backgroundSurfaceForGameFormImages\surface13.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="surface14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\backgroundSurfaceForGameFormImages\surface14.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="surface15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\backgroundSurfaceForGameFormImages\surface15.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="surface16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\backgroundSurfaceForGameFormImages\surface16.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="surface17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\backgroundSurfaceForGameFormImages\surface17.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="surface18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\backgroundSurfaceForGameFormImages\surface18.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="surface19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\backgroundSurfaceForGameFormImages\surface19.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="surface2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\backgroundSurfaceForGameFormImages\surface2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="surface20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\backgroundSurfaceForGameFormImages\surface20.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="surface21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\backgroundSurfaceForGameFormImages\surface21.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="surface22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\backgroundSurfaceForGameFormImages\surface22.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="surface23" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\backgroundSurfaceForGameFormImages\surface23.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="surface24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\backgroundSurfaceForGameFormImages\surface24.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="surface25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\backgroundSurfaceForGameFormImages\surface25.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="surface26" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\backgroundSurfaceForGameFormImages\surface26.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="surface27" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\backgroundSurfaceForGameFormImages\surface27.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="surface28" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\backgroundSurfaceForGameFormImages\surface28.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="surface29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\backgroundSurfaceForGameFormImages\surface29.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="surface3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\backgroundSurfaceForGameFormImages\surface3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="surface30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\backgroundSurfaceForGameFormImages\surface30.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="surface31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\backgroundSurfaceForGameFormImages\surface31.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="surface32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\backgroundSurfaceForGameFormImages\surface32.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="surface33" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\backgroundSurfaceForGameFormImages\surface33.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="surface34" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\backgroundSurfaceForGameFormImages\surface34.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="surface35" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\backgroundSurfaceForGameFormImages\surface35.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="surface36" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\backgroundSurfaceForGameFormImages\surface36.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="surface37" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\backgroundSurfaceForGameFormImages\surface37.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="surface4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\backgroundSurfaceForGameFormImages\surface4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="surface5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\backgroundSurfaceForGameFormImages\surface5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="surface6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\backgroundSurfaceForGameFormImages\surface6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="surface7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\backgroundSurfaceForGameFormImages\surface7.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="surface8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\backgroundSurfaceForGameFormImages\surface8.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="surface9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\backgroundSurfaceForGameFormImages\surface9.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tileBackgroundHit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shootingAreaTiles\tileBackgroundHit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tileBackgroundMiss" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shootingAreaTiles\tileBackgroundMiss.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tileBackgroundShipSunked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shootingAreaTiles\tileBackgroundShipSunked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yesButtonImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\buttonsImages\yesButtonImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

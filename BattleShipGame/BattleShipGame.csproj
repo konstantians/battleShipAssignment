@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5A946C88-7FB3-4DC2-8F8C-A51C92D96F8F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BattleShipGame</RootNamespace>
+    <AssemblyName>BattleShipGame</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomControls\CustomButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormationForm.Designer.cs">
+      <DependentUpon>FormationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameEntryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameEntryForm.Designer.cs">
+      <DependentUpon>GameEntryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameForm.Designer.cs">
+      <DependentUpon>GameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuBarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuBarForm.Designer.cs">
+      <DependentUpon>MenuBarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="models\Vessel.cs" />
+    <Compile Include="models\VesselInControlPanel.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ShootEnemyShipForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShootEnemyShipForm.Designer.cs">
+      <DependentUpon>ShootEnemyShipForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaticData.cs" />
+    <Compile Include="StaticHelpedMethods.cs" />
+    <EmbeddedResource Include="FormationForm.resx">
+      <DependentUpon>FormationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameEntryForm.resx">
+      <DependentUpon>GameEntryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameForm.resx">
+      <DependentUpon>GameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuBarForm.resx">
+      <DependentUpon>MenuBarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShootEnemyShipForm.resx">
+      <DependentUpon>ShootEnemyShipForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AudioResources\buttonClickSound.wav" />
+    <Content Include="AudioResources\gameOverSound.wav" />
+    <Content Include="AudioResources\mainSoundTrack.wav" />
+    <Content Include="AudioResources\missisleExplosionSound.wav" />
+    <Content Include="AudioResources\missisleLaunchSound.wav" />
+    <Content Include="AudioResources\missisleMissSound.wav" />
+    <Content Include="AudioResources\missisleSinkSound.wav" />
+    <Content Include="AudioResources\missisleTorpedoSound.wav" />
+    <Content Include="ImageResources\BackgroundImages\controlPanelBackgroundCentralMenu.jpg" />
+    <Content Include="ImageResources\BackgroundImages\controlPanelBackGroundImage.png" />
+    <Content Include="ImageResources\BackgroundImages\gameStartingMenuImage.jpg" />
+    <Content Include="ImageResources\battleTiles\hitTile.png" />
+    <Content Include="ImageResources\buttonsImages\cheatButton.png" />
+    <Content Include="ImageResources\shipPanelsStatusImages\enemyFleetBigShips\enemyFleetAircraftCarrierSunk.png" />
+    <Content Include="ImageResources\shipPanelsStatusImages\enemyFleetBigShips\enemyFleetBattleShip&amp;AircraftCarrierSunk.png" />
+    <Content Include="ImageResources\shipPanelsStatusImages\enemyFleetBigShips\enemyFleetBattleShip&amp;DestroyerSunk.png" />
+    <Content Include="ImageResources\shipPanelsStatusImages\enemyFleetBigShips\enemyFleetBattleShipSunk.png" />
+    <Content Include="ImageResources\shipPanelsStatusImages\enemyFleetBigShips\enemyFleetDestroyer&amp;AircraftCarrierSunk.png" />
+    <Content Include="ImageResources\shipPanelsStatusImages\enemyFleetBigShips\enemyFleetDestroyer&amp;BattleShip&amp;AircraftCarrierSunk.png" />
+    <Content Include="ImageResources\shipPanelsStatusImages\enemyFleetBigShips\enemyFleetDestroyerSunk.png" />
+    <Content Include="ImageResources\shipPanelsStatusImages\enemyFleetBigShips\enemyFleetPanelBigShips.png" />
+    <Content Include="ImageResources\shipPanelsStatusImages\enemyFleetSmallShips\enemyFleetCorvette&amp;FrigateSunk.png" />
+    <Content Include="ImageResources\shipPanelsStatusImages\enemyFleetSmallShips\enemyFleetCorvetteSunk.png" />
+    <Content Include="ImageResources\shipPanelsStatusImages\enemyFleetSmallShips\enemyFleetFrigateSunk.png" />
+    <Content Include="ImageResources\shipPanelsStatusImages\enemyFleetSmallShips\enemyFleetPanelSmallerShips.png" />
+    <Content Include="ImageResources\shipPanelsStatusImages\enemyFleetSmallShips\enemyFleetSubmarine&amp;Corvette&amp;FrigateSunk.png" />
+    <Content Include="ImageResources\shipPanelsStatusImages\enemyFleetSmallShips\enemyFleetSubmarine&amp;CorvetteSunk.png" />
+    <Content Include="ImageResources\shipPanelsStatusImages\enemyFleetSmallShips\enemyFleetSubmarine&amp;FrigateSunk.png" />
+    <Content Include="ImageResources\shipPanelsStatusImages\enemyFleetSmallShips\enemyFleetSubmarineSunk.png" />
+    <Content Include="ImageResources\shipPanelsStatusImages\myFleetBigShips\myFleetAircraftCarrier&amp;BattleDestroyerSunk.png" />
+    <Content Include="ImageResources\shipPanelsStatusImages\myFleetBigShips\myFleetAircraftCarrier&amp;BattleShip&amp;DestroyerSunk.png" />
+    <Content Include="ImageResources\shipPanelsStatusImages\myFleetBigShips\myFleetAircraftCarrier&amp;BattleShipSunk.png" />
+    <Content Include="ImageResources\shipPanelsStatusImages\myFleetBigShips\myFleetAircraftCarrierSunk.png" />
+    <Content Include="ImageResources\shipPanelsStatusImages\myFleetBigShips\myFleetBattleShip&amp;DestroyerSunk.png" />
+    <Content Include="ImageResources\shipPanelsStatusImages\myFleetBigShips\myFleetBattleShipSunk.png" />
+    <Content Include="ImageResources\shipPanelsStatusImages\myFleetBigShips\myFleetDestroyerSunk.png" />
+    <Content Include="ImageResources\shipPanelsStatusImages\myFleetBigShips\myFleetPanelBiggerShips.png" />
+    <Content Include="ImageResources\shipPanelsStatusImages\myFleetSmallShips\myFleetPanelSmallerShips.png" />
+    <Content Include="ImageResources\backgroundSurfaceForGameFormImages\surface0.jpg" />
+    <Content Include="ImageResources\backgroundSurfaceForGameFormImages\surface1.jpg" />
+    <Content Include="ImageResources\backgroundSurfaceForGameFormImages\surface10.jpg" />
+    <Content Include="ImageResources\backgroundSurfaceForGameFormImages\surface11.jpg" />
+    <Content Include="ImageResources\backgroundSurfaceForGameFormImages\surface12.jpg" />
+    <Content Include="ImageResources\backgroundSurfaceForGameFormImages\surface13.jpg" />
+    <Content Include="ImageResources\backgroundSurfaceForGameFormImages\surface14.jpg" />
+    <Content Include="ImageResources\backgroundSurfaceForGameFormImages\surface15.jpg" />
+    <Content Include="ImageResources\backgroundSurfaceForGameFormImages\surface16.jpg" />
+    <Content Include="ImageResources\backgroundSurfaceForGameFormImages\surface17.jpg" />
+    <Content Include="ImageResources\backgroundSurfaceForGameFormImages\surface18.jpg" />
+    <Content Include="ImageResources\backgroundSurfaceForGameFormImages\surface19.jpg" />
+    <Content Include="ImageResources\backgroundSurfaceForGameFormImages\surface2.jpg" />
+    <Content Include="ImageResources\backgroundSurfaceForGameFormImages\surface20.jpg" />
+    <Content Include="ImageResources\backgroundSurfaceForGameFormImages\surface21.jpg" />
+    <Content Include="ImageResources\backgroundSurfaceForGameFormImages\surface22.jpg" />
+    <Content Include="ImageResources\backgroundSurfaceForGameFormImages\surface23.jpg" />
+    <Content Include="ImageResources\backgroundSurfaceForGameFormImages\surface24.jpg" />
+    <Content Include="ImageResources\backgroundSurfaceForGameFormImages\surface25.jpg" />
+    <Content Include="ImageResources\backgroundSurfaceForGameFormImages\surface26.jpg" />
+    <Content Include="ImageResources\backgroundSurfaceForGameFormImages\surface27.jpg" />
+    <Content Include="ImageResources\backgroundSurfaceForGameFormImages\surface28.jpg" />
+    <Content Include="ImageResources\backgroundSurfaceForGameFormImages\surface29.jpg" />
+    <Content Include="ImageResources\backgroundSurfaceForGameFormImages\surface3.jpg" />
+    <Content Include="ImageResources\backgroundSurfaceForGameFormImages\surface30.jpg" />
+    <Content Include="ImageResources\backgroundSurfaceForGameFormImages\surface31.jpg" />
+    <Content Include="ImageResources\backgroundSurfaceForGameFormImages\surface32.jpg" />
+    <Content Include="ImageResources\backgroundSurfaceForGameFormImages\surface33.jpg" />
+    <Content Include="ImageResources\backgroundSurfaceForGameFormImages\surface34.jpg" />
+    <Content Include="ImageResources\backgroundSurfaceForGameFormImages\surface35.jpg" />
+    <Content Include="ImageResources\backgroundSurfaceForGameFormImages\surface36.jpg" />
+    <Content Include="ImageResources\backgroundSurfaceForGameFormImages\surface37.jpg" />
+    <Content Include="ImageResources\backgroundSurfaceForGameFormImages\surface4.jpg" />
+    <Content Include="ImageResources\backgroundSurfaceForGameFormImages\surface5.jpg" />
+    <Content Include="ImageResources\backgroundSurfaceForGameFormImages\surface6.jpg" />
+    <Content Include="ImageResources\backgroundSurfaceForGameFormImages\surface7.jpg" />
+    <Content Include="ImageResources\backgroundSurfaceForGameFormImages\surface8.jpg" />
+    <Content Include="ImageResources\backgroundSurfaceForGameFormImages\surface9.jpg" />
+    <Content Include="ImageResources\buttonsImages\audioOffImage.png" />
+    <Content Include="ImageResources\buttonsImages\audioOnImage.png" />
+    <Content Include="ImageResources\buttonsImages\minizeButtonImage.png" />
+    <Content Include="ImageResources\buttonsImages\defaultSizeButton.png" />
+    <Content Include="ImageResources\buttonsImages\exitButtonImage.png" />
+    <Content Include="ImageResources\buttonsImages\fullScreenButton.png" />
+    <Content Include="ImageResources\buttonsImages\playButtonImage.png" />
+    <Content Include="ImageResources\buttonsImages\resetFormationButton.png" />
+    <Content Include="ImageResources\buttonsImages\rotateImageButton.png" />
+    <Content Include="ImageResources\buttonsImages\setRandomFormationButton.png" />
+    <Content Include="ImageResources\buttonsImages\yesButtonImage.png" />
+    <Content Include="ImageResources\battleTiles\destroyedTile.png" />
+    <Content Include="ImageResources\fireRotationImages\1.fire.png" />
+    <Content Include="ImageResources\fireRotationImages\fires - Copy %283%29.png" />
+    <Content Include="ImageResources\fireRotationImages\fires - Copy %284%29.png" />
+    <Content Include="ImageResources\fireRotationImages\fires - Copy %285%29.png" />
+    <Content Include="ImageResources\fireRotationImages\fires - Copy %286%29.png" />
+    <Content Include="ImageResources\fireRotationImages\fires - Copy %287%29.png" />
+    <Content Include="ImageResources\fireRotationImages\fires - Copy %288%29.png" />
+    <Content Include="ImageResources\fireRotationImages\fires - Copy %289%29.png" />
+    <Content Include="ImageResources\fireRotationImages\fires - Copy.png" />
+    <Content Include="ImageResources\fireRotationImages\fires.png" />
+    <Content Include="ImageResources\missisleExplosionRotationImages\MissisleExplosions.png" />
+    <Content Include="ImageResources\missisleWaterRotationImages\missile_water.png" />
+    <Content Include="ImageResources\occupiedAreaTile.png" />
+    <Content Include="ImageResources\shipDestroyedRotationImages\shipDestroyedRotationImages.png" />
+    <Content Include="ImageResources\shipPanelsStatusImages\myFleetSmallShips\myFleetCorvette&amp;FrigateSunk.png" />
+    <Content Include="ImageResources\shipPanelsStatusImages\myFleetSmallShips\myFleetCorvetteSunk.png" />
+    <Content Include="ImageResources\shipPanelsStatusImages\myFleetSmallShips\myFleetFrigateSunk.png" />
+    <Content Include="ImageResources\shipPanelsStatusImages\myFleetSmallShips\myFleetSubmarine&amp;Corvette&amp;FrigateSunk.png" />
+    <Content Include="ImageResources\shipPanelsStatusImages\myFleetSmallShips\myFleetSubmarine&amp;CorvetteSunk.png" />
+    <Content Include="ImageResources\shipPanelsStatusImages\myFleetSmallShips\myFleetSubmarine&amp;FrigateSunk.png" />
+    <Content Include="ImageResources\shipPanelsStatusImages\myFleetSmallShips\myFleetSubmarineSunk.png" />
+    <Content Include="ImageResources\shootingAreaTiles\tileBackgroundHit.png" />
+    <Content Include="ImageResources\shootingAreaTiles\tileBackgroundMiss.png" />
+    <Content Include="ImageResources\shootingAreaTiles\tileBackgroundShipSunked.png" />
+    <Content Include="ImageResources\vesselImagesHorizontal\aircraftCarrierHorizontal.png" />
+    <Content Include="ImageResources\vesselImagesHorizontal\battleShipHorizontal.png" />
+    <Content Include="ImageResources\vesselImagesHorizontal\corvetteHorizontal.png" />
+    <Content Include="ImageResources\vesselImagesHorizontal\destroyerHorizontal.png" />
+    <Content Include="ImageResources\vesselImagesHorizontal\frigateHorizontal.png" />
+    <Content Include="ImageResources\vesselImagesHorizontal\submarineHorizontal.png" />
+    <Content Include="ImageResources\vesselImagesWithGreenSkins\aircraftCarrierWithGreenSkin.png" />
+    <Content Include="ImageResources\vesselImagesWithGreenSkins\battleShipWithGreenSkin.png" />
+    <Content Include="ImageResources\vesselImagesWithGreenSkins\corvetteWithGreenSkin.png" />
+    <Content Include="ImageResources\vesselImagesWithGreenSkins\destroyerWithGreenSKin.png" />
+    <Content Include="ImageResources\vesselImagesWithGreenSkins\frigateWithGreenSkin.png" />
+    <Content Include="ImageResources\vesselImagesWithGreenSkins\submarineWithGreenSkin.png" />
+    <Content Include="ImageResources\vesselImages\aircraftCarrier.png" />
+    <Content Include="ImageResources\airplane.png" />
+    <Content Include="ImageResources\vesselImages\battleShip.png" />
+    <Content Include="ImageResources\vesselImages\corvette.png" />
+    <Content Include="ImageResources\vesselImages\destroyer.png" />
+    <Content Include="ImageResources\vesselImages\frigate.png" />
+    <Content Include="ImageResources\vesselImages\submarine.png" />
+    <Content Include="ImageResources\vesselShapes\aircraftCarrierShape.png" />
+    <Content Include="ImageResources\vesselShapes\battleShipShape.png" />
+    <Content Include="ImageResources\vesselShapes\corvetteShape.png" />
+    <Content Include="ImageResources\vesselShapes\destroyerShape.png" />
+    <Content Include="ImageResources\vesselShapes\frigateShape.png" />
+    <Content Include="ImageResources\vesselShapes\submarineShape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
