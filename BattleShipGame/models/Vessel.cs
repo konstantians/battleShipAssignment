@@ -23,6 +23,7 @@ namespace BattleShipGame.models
         {
             VesselName = vesselInControlPanel.VesselName;
             VesselSize = vesselInControlPanel.VesselSize;
+            TilesLeft = vesselInControlPanel.TilesLeft;
             IsHorizontallyAligned = vesselInControlPanel.IsHorizontallyAligned;
             PanelsItOccupies = vesselInControlPanel.PanelsItOccupies;
             NeighboursItOccupies = vesselInControlPanel.NeighboursItOccupies;

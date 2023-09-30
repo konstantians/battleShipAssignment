@@ -67,6 +67,12 @@
     <Compile Include="GameForm.Designer.cs">
       <DependentUpon>GameForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="GameResultForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameResultForm.Designer.cs">
+      <DependentUpon>GameResultForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuBarForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,9 @@
     <EmbeddedResource Include="GameForm.resx">
       <DependentUpon>GameForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GameResultForm.resx">
+      <DependentUpon>GameResultForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuBarForm.resx">
       <DependentUpon>MenuBarForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -124,6 +133,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AudioResources\airstrikeSound.wav" />
     <Content Include="AudioResources\buttonClickSound.wav" />
     <Content Include="AudioResources\gameOverSound.wav" />
     <Content Include="AudioResources\mainSoundTrack.wav" />
@@ -137,12 +147,137 @@
     <Content Include="ImageResources\BackgroundImages\gameStartingMenuImage.jpg" />
     <Content Include="ImageResources\battleTiles\hitTile.png" />
     <Content Include="ImageResources\buttonsImages\cheatButton.png" />
+    <Content Include="ImageResources\fireRotationImages\fire1.png" />
+    <Content Include="ImageResources\fireRotationImages\fire10.png" />
+    <Content Include="ImageResources\fireRotationImages\fire11.png" />
+    <Content Include="ImageResources\fireRotationImages\fire12.png" />
+    <Content Include="ImageResources\fireRotationImages\fire13.png" />
+    <Content Include="ImageResources\fireRotationImages\fire14.png" />
+    <Content Include="ImageResources\fireRotationImages\fire15.png" />
+    <Content Include="ImageResources\fireRotationImages\fire16.png" />
+    <Content Include="ImageResources\fireRotationImages\fire17.png" />
+    <Content Include="ImageResources\fireRotationImages\fire18.png" />
+    <Content Include="ImageResources\fireRotationImages\fire19.png" />
+    <Content Include="ImageResources\fireRotationImages\fire2.png" />
+    <Content Include="ImageResources\fireRotationImages\fire20.png" />
+    <Content Include="ImageResources\fireRotationImages\fire21.png" />
+    <Content Include="ImageResources\fireRotationImages\fire22.png" />
+    <Content Include="ImageResources\fireRotationImages\fire23.png" />
+    <Content Include="ImageResources\fireRotationImages\fire24.png" />
+    <Content Include="ImageResources\fireRotationImages\fire25.png" />
+    <Content Include="ImageResources\fireRotationImages\fire26.png" />
+    <Content Include="ImageResources\fireRotationImages\fire27.png" />
+    <Content Include="ImageResources\fireRotationImages\fire28.png" />
+    <Content Include="ImageResources\fireRotationImages\fire29.png" />
+    <Content Include="ImageResources\fireRotationImages\fire3.png" />
+    <Content Include="ImageResources\fireRotationImages\fire30.png" />
+    <Content Include="ImageResources\fireRotationImages\fire4.png" />
+    <Content Include="ImageResources\fireRotationImages\fire5.png" />
+    <Content Include="ImageResources\fireRotationImages\fire6.png" />
+    <Content Include="ImageResources\fireRotationImages\fire7.png" />
+    <Content Include="ImageResources\fireRotationImages\fire8.png" />
+    <Content Include="ImageResources\fireRotationImages\fire9.png" />
+    <Content Include="ImageResources\missisleExplosionRotationImages\MissisleExplosion0.png" />
+    <Content Include="ImageResources\missisleExplosionRotationImages\MissisleExplosion1.png" />
+    <Content Include="ImageResources\missisleExplosionRotationImages\MissisleExplosion10.png" />
+    <Content Include="ImageResources\missisleExplosionRotationImages\MissisleExplosion11.png" />
+    <Content Include="ImageResources\missisleExplosionRotationImages\MissisleExplosion12.png" />
+    <Content Include="ImageResources\missisleExplosionRotationImages\MissisleExplosion13.png" />
+    <Content Include="ImageResources\missisleExplosionRotationImages\MissisleExplosion14.png" />
+    <Content Include="ImageResources\missisleExplosionRotationImages\MissisleExplosion15.png" />
+    <Content Include="ImageResources\missisleExplosionRotationImages\MissisleExplosion16.png" />
+    <Content Include="ImageResources\missisleExplosionRotationImages\MissisleExplosion17.png" />
+    <Content Include="ImageResources\missisleExplosionRotationImages\MissisleExplosion18.png" />
+    <Content Include="ImageResources\missisleExplosionRotationImages\MissisleExplosion19.png" />
+    <Content Include="ImageResources\missisleExplosionRotationImages\MissisleExplosion2.png" />
+    <Content Include="ImageResources\missisleExplosionRotationImages\MissisleExplosion20.png" />
+    <Content Include="ImageResources\missisleExplosionRotationImages\MissisleExplosion21.png" />
+    <Content Include="ImageResources\missisleExplosionRotationImages\MissisleExplosion22.png" />
+    <Content Include="ImageResources\missisleExplosionRotationImages\MissisleExplosion23.png" />
+    <Content Include="ImageResources\missisleExplosionRotationImages\MissisleExplosion24.png" />
+    <Content Include="ImageResources\missisleExplosionRotationImages\MissisleExplosion25.png" />
+    <Content Include="ImageResources\missisleExplosionRotationImages\MissisleExplosion26.png" />
+    <Content Include="ImageResources\missisleExplosionRotationImages\MissisleExplosion27.png" />
+    <Content Include="ImageResources\missisleExplosionRotationImages\MissisleExplosion28.png" />
+    <Content Include="ImageResources\missisleExplosionRotationImages\MissisleExplosion3.png" />
+    <Content Include="ImageResources\missisleExplosionRotationImages\MissisleExplosion4.png" />
+    <Content Include="ImageResources\missisleExplosionRotationImages\MissisleExplosion5.png" />
+    <Content Include="ImageResources\missisleExplosionRotationImages\MissisleExplosion6.png" />
+    <Content Include="ImageResources\missisleExplosionRotationImages\MissisleExplosion7.png" />
+    <Content Include="ImageResources\missisleExplosionRotationImages\MissisleExplosion8.png" />
+    <Content Include="ImageResources\missisleExplosionRotationImages\MissisleExplosion9.png" />
+    <Content Include="ImageResources\missisleWaterRotationImages\MissisleWater0.png" />
+    <Content Include="ImageResources\missisleWaterRotationImages\MissisleWater1.png" />
+    <Content Include="ImageResources\missisleWaterRotationImages\MissisleWater10.png" />
+    <Content Include="ImageResources\missisleWaterRotationImages\MissisleWater11.png" />
+    <Content Include="ImageResources\missisleWaterRotationImages\MissisleWater12.png" />
+    <Content Include="ImageResources\missisleWaterRotationImages\MissisleWater13.png" />
+    <Content Include="ImageResources\missisleWaterRotationImages\MissisleWater14.png" />
+    <Content Include="ImageResources\missisleWaterRotationImages\MissisleWater15.png" />
+    <Content Include="ImageResources\missisleWaterRotationImages\MissisleWater16.png" />
+    <Content Include="ImageResources\missisleWaterRotationImages\MissisleWater17.png" />
+    <Content Include="ImageResources\missisleWaterRotationImages\MissisleWater18.png" />
+    <Content Include="ImageResources\missisleWaterRotationImages\MissisleWater19.png" />
+    <Content Include="ImageResources\missisleWaterRotationImages\MissisleWater2.png" />
+    <Content Include="ImageResources\missisleWaterRotationImages\MissisleWater20.png" />
+    <Content Include="ImageResources\missisleWaterRotationImages\MissisleWater21.png" />
+    <Content Include="ImageResources\missisleWaterRotationImages\MissisleWater22.png" />
+    <Content Include="ImageResources\missisleWaterRotationImages\MissisleWater23.png" />
+    <Content Include="ImageResources\missisleWaterRotationImages\MissisleWater24.png" />
+    <Content Include="ImageResources\missisleWaterRotationImages\MissisleWater25.png" />
+    <Content Include="ImageResources\missisleWaterRotationImages\MissisleWater26.png" />
+    <Content Include="ImageResources\missisleWaterRotationImages\MissisleWater27.png" />
+    <Content Include="ImageResources\missisleWaterRotationImages\MissisleWater28.png" />
+    <Content Include="ImageResources\missisleWaterRotationImages\MissisleWater3.png" />
+    <Content Include="ImageResources\missisleWaterRotationImages\MissisleWater4.png" />
+    <Content Include="ImageResources\missisleWaterRotationImages\MissisleWater5.png" />
+    <Content Include="ImageResources\missisleWaterRotationImages\MissisleWater6.png" />
+    <Content Include="ImageResources\missisleWaterRotationImages\MissisleWater7.png" />
+    <Content Include="ImageResources\missisleWaterRotationImages\MissisleWater8.png" />
+    <Content Include="ImageResources\missisleWaterRotationImages\MissisleWater9.png" />
+    <Content Include="ImageResources\shipDestroyedRotationImages\finalExplosion0.png" />
+    <Content Include="ImageResources\shipDestroyedRotationImages\finalExplosion1.png" />
+    <Content Include="ImageResources\shipDestroyedRotationImages\finalExplosion10.png" />
+    <Content Include="ImageResources\shipDestroyedRotationImages\finalExplosion11.png" />
+    <Content Include="ImageResources\shipDestroyedRotationImages\finalExplosion12.png" />
+    <Content Include="ImageResources\shipDestroyedRotationImages\finalExplosion13.png" />
+    <Content Include="ImageResources\shipDestroyedRotationImages\finalExplosion14.png" />
+    <Content Include="ImageResources\shipDestroyedRotationImages\finalExplosion15.png" />
+    <Content Include="ImageResources\shipDestroyedRotationImages\finalExplosion16.png" />
+    <Content Include="ImageResources\shipDestroyedRotationImages\finalExplosion17.png" />
+    <Content Include="ImageResources\shipDestroyedRotationImages\finalExplosion18.png" />
+    <Content Include="ImageResources\shipDestroyedRotationImages\finalExplosion19.png" />
+    <Content Include="ImageResources\shipDestroyedRotationImages\finalExplosion2.png" />
+    <Content Include="ImageResources\shipDestroyedRotationImages\finalExplosion20.png" />
+    <Content Include="ImageResources\shipDestroyedRotationImages\finalExplosion21.png" />
+    <Content Include="ImageResources\shipDestroyedRotationImages\finalExplosion22.png" />
+    <Content Include="ImageResources\shipDestroyedRotationImages\finalExplosion23.png" />
+    <Content Include="ImageResources\shipDestroyedRotationImages\finalExplosion24.png" />
+    <Content Include="ImageResources\shipDestroyedRotationImages\finalExplosion25.png" />
+    <Content Include="ImageResources\shipDestroyedRotationImages\finalExplosion26.png" />
+    <Content Include="ImageResources\shipDestroyedRotationImages\finalExplosion27.png" />
+    <Content Include="ImageResources\shipDestroyedRotationImages\finalExplosion28.png" />
+    <Content Include="ImageResources\shipDestroyedRotationImages\finalExplosion29.png" />
+    <Content Include="ImageResources\shipDestroyedRotationImages\finalExplosion3.png" />
+    <Content Include="ImageResources\shipDestroyedRotationImages\finalExplosion30.png" />
+    <Content Include="ImageResources\shipDestroyedRotationImages\finalExplosion31.png" />
+    <Content Include="ImageResources\shipDestroyedRotationImages\finalExplosion32.png" />
+    <Content Include="ImageResources\shipDestroyedRotationImages\finalExplosion33.png" />
+    <Content Include="ImageResources\shipDestroyedRotationImages\finalExplosion34.png" />
+    <Content Include="ImageResources\shipDestroyedRotationImages\finalExplosion35.png" />
+    <Content Include="ImageResources\shipDestroyedRotationImages\finalExplosion36.png" />
+    <Content Include="ImageResources\shipDestroyedRotationImages\finalExplosion4.png" />
+    <Content Include="ImageResources\shipDestroyedRotationImages\finalExplosion5.png" />
+    <Content Include="ImageResources\shipDestroyedRotationImages\finalExplosion6.png" />
+    <Content Include="ImageResources\shipDestroyedRotationImages\finalExplosion7.png" />
+    <Content Include="ImageResources\shipDestroyedRotationImages\finalExplosion8.png" />
+    <Content Include="ImageResources\shipDestroyedRotationImages\finalExplosion9.png" />
     <Content Include="ImageResources\shipPanelsStatusImages\enemyFleetBigShips\enemyFleetAircraftCarrierSunk.png" />
-    <Content Include="ImageResources\shipPanelsStatusImages\enemyFleetBigShips\enemyFleetBattleShip&amp;AircraftCarrierSunk.png" />
+    <Content Include="ImageResources\shipPanelsStatusImages\enemyFleetBigShips\enemyFleetAircraftCarrier&amp;BattleShipSunk.png" />
     <Content Include="ImageResources\shipPanelsStatusImages\enemyFleetBigShips\enemyFleetBattleShip&amp;DestroyerSunk.png" />
     <Content Include="ImageResources\shipPanelsStatusImages\enemyFleetBigShips\enemyFleetBattleShipSunk.png" />
-    <Content Include="ImageResources\shipPanelsStatusImages\enemyFleetBigShips\enemyFleetDestroyer&amp;AircraftCarrierSunk.png" />
-    <Content Include="ImageResources\shipPanelsStatusImages\enemyFleetBigShips\enemyFleetDestroyer&amp;BattleShip&amp;AircraftCarrierSunk.png" />
+    <Content Include="ImageResources\shipPanelsStatusImages\enemyFleetBigShips\enemyFleetAircraftCarrier&amp;BattleDestroyerSunk.png" />
+    <Content Include="ImageResources\shipPanelsStatusImages\enemyFleetBigShips\enemyFleetAircraftCarrier&amp;BattleShip&amp;DestroyerSunk.png" />
     <Content Include="ImageResources\shipPanelsStatusImages\enemyFleetBigShips\enemyFleetDestroyerSunk.png" />
     <Content Include="ImageResources\shipPanelsStatusImages\enemyFleetBigShips\enemyFleetPanelBigShips.png" />
     <Content Include="ImageResources\shipPanelsStatusImages\enemyFleetSmallShips\enemyFleetCorvette&amp;FrigateSunk.png" />
@@ -212,20 +347,7 @@
     <Content Include="ImageResources\buttonsImages\setRandomFormationButton.png" />
     <Content Include="ImageResources\buttonsImages\yesButtonImage.png" />
     <Content Include="ImageResources\battleTiles\destroyedTile.png" />
-    <Content Include="ImageResources\fireRotationImages\1.fire.png" />
-    <Content Include="ImageResources\fireRotationImages\fires - Copy %283%29.png" />
-    <Content Include="ImageResources\fireRotationImages\fires - Copy %284%29.png" />
-    <Content Include="ImageResources\fireRotationImages\fires - Copy %285%29.png" />
-    <Content Include="ImageResources\fireRotationImages\fires - Copy %286%29.png" />
-    <Content Include="ImageResources\fireRotationImages\fires - Copy %287%29.png" />
-    <Content Include="ImageResources\fireRotationImages\fires - Copy %288%29.png" />
-    <Content Include="ImageResources\fireRotationImages\fires - Copy %289%29.png" />
-    <Content Include="ImageResources\fireRotationImages\fires - Copy.png" />
-    <Content Include="ImageResources\fireRotationImages\fires.png" />
-    <Content Include="ImageResources\missisleExplosionRotationImages\MissisleExplosions.png" />
-    <Content Include="ImageResources\missisleWaterRotationImages\missile_water.png" />
     <Content Include="ImageResources\occupiedAreaTile.png" />
-    <Content Include="ImageResources\shipDestroyedRotationImages\shipDestroyedRotationImages.png" />
     <Content Include="ImageResources\shipPanelsStatusImages\myFleetSmallShips\myFleetCorvette&amp;FrigateSunk.png" />
     <Content Include="ImageResources\shipPanelsStatusImages\myFleetSmallShips\myFleetCorvetteSunk.png" />
     <Content Include="ImageResources\shipPanelsStatusImages\myFleetSmallShips\myFleetFrigateSunk.png" />
@@ -249,7 +371,7 @@
     <Content Include="ImageResources\vesselImagesWithGreenSkins\frigateWithGreenSkin.png" />
     <Content Include="ImageResources\vesselImagesWithGreenSkins\submarineWithGreenSkin.png" />
     <Content Include="ImageResources\vesselImages\aircraftCarrier.png" />
-    <Content Include="ImageResources\airplane.png" />
+    <Content Include="ImageResources\weaponsImages\airplane.png" />
     <Content Include="ImageResources\vesselImages\battleShip.png" />
     <Content Include="ImageResources\vesselImages\corvette.png" />
     <Content Include="ImageResources\vesselImages\destroyer.png" />
@@ -261,6 +383,11 @@
     <Content Include="ImageResources\vesselShapes\destroyerShape.png" />
     <Content Include="ImageResources\vesselShapes\frigateShape.png" />
     <Content Include="ImageResources\vesselShapes\submarineShape.png" />
+    <Content Include="ImageResources\weaponsImages\enemyAirplane.png" />
+    <Content Include="ImageResources\weaponsImages\enemyMissisle.png" />
+    <Content Include="ImageResources\weaponsImages\enemyTorpedo.png" />
+    <Content Include="ImageResources\weaponsImages\missile.png" />
+    <Content Include="ImageResources\weaponsImages\torpedo.png" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="AxWMPLib">

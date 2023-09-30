@@ -44,6 +44,7 @@
             // 
             // childFormPanel
             // 
+            this.childFormPanel.BackColor = System.Drawing.Color.LimeGreen;
             this.childFormPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.childFormPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.childFormPanel.Location = new System.Drawing.Point(0, 52);

@@ -130,6 +130,12 @@
   <data name="aircraftCarrierWithGreenSkin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ImageResources\vesselImagesWithGreenSkins\aircraftCarrierWithGreenSkin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="airplane" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\weaponsImages\airplane.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="airstrikeSound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\AudioResources\airstrikeSound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="audioOffImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ImageResources\buttonsImages\audioOffImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -190,14 +196,266 @@
   <data name="destroyerWithGreenSKin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ImageResources\vesselImagesWithGreenSkins\destroyerWithGreenSKin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="enemyAirplane" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\weaponsImages\enemyAirplane.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemyFleetAircraftCarrierSunk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipPanelsStatusImages\enemyFleetBigShips\enemyFleetAircraftCarrierSunk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemyFleetAircraftCarrier_BattleDestroyerSunk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipPanelsStatusImages\enemyFleetBigShips\enemyFleetAircraftCarrier&amp;BattleDestroyerSunk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemyFleetAircraftCarrier_BattleShipSunk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipPanelsStatusImages\enemyFleetBigShips\enemyFleetAircraftCarrier&amp;BattleShipSunk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemyFleetAircraftCarrier_BattleShip_DestroyerSunk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipPanelsStatusImages\enemyFleetBigShips\enemyFleetAircraftCarrier&amp;BattleShip&amp;DestroyerSunk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemyFleetBattleShipSunk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipPanelsStatusImages\enemyFleetBigShips\enemyFleetBattleShipSunk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemyFleetBattleShip_DestroyerSunk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipPanelsStatusImages\enemyFleetBigShips\enemyFleetBattleShip&amp;DestroyerSunk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemyFleetCorvetteSunk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipPanelsStatusImages\enemyFleetSmallShips\enemyFleetCorvetteSunk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemyFleetCorvette_FrigateSunk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipPanelsStatusImages\enemyFleetSmallShips\enemyFleetCorvette&amp;FrigateSunk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemyFleetDestroyerSunk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipPanelsStatusImages\enemyFleetBigShips\enemyFleetDestroyerSunk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemyFleetFrigateSunk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipPanelsStatusImages\enemyFleetSmallShips\enemyFleetFrigateSunk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="enemyFleetPanelBigShips" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ImageResources\shipPanelsStatusImages\enemyFleetBigShips\enemyFleetPanelBigShips.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="enemyFleetPanelSmallerShips" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ImageResources\shipPanelsStatusImages\enemyFleetSmallShips\enemyFleetPanelSmallerShips.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="enemyFleetSubmarineSunk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipPanelsStatusImages\enemyFleetSmallShips\enemyFleetSubmarineSunk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemyFleetSubmarine_CorvetteSunk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipPanelsStatusImages\enemyFleetSmallShips\enemyFleetSubmarine&amp;CorvetteSunk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemyFleetSubmarine_Corvette_FrigateSunk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipPanelsStatusImages\enemyFleetSmallShips\enemyFleetSubmarine&amp;Corvette&amp;FrigateSunk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemyFleetSubmarine_FrigateSunk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipPanelsStatusImages\enemyFleetSmallShips\enemyFleetSubmarine&amp;FrigateSunk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemyMissisle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\weaponsImages\enemyMissisle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemyTorpedo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\weaponsImages\enemyTorpedo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="exitButtonImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ImageResources\buttonsImages\exitButtonImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalExplosion0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipDestroyedRotationImages\finalExplosion0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalExplosion1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipDestroyedRotationImages\finalExplosion1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalExplosion10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipDestroyedRotationImages\finalExplosion10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalExplosion11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipDestroyedRotationImages\finalExplosion11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalExplosion12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipDestroyedRotationImages\finalExplosion12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalExplosion13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipDestroyedRotationImages\finalExplosion13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalExplosion14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipDestroyedRotationImages\finalExplosion14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalExplosion15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipDestroyedRotationImages\finalExplosion15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalExplosion16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipDestroyedRotationImages\finalExplosion16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalExplosion17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipDestroyedRotationImages\finalExplosion17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalExplosion18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipDestroyedRotationImages\finalExplosion18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalExplosion19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipDestroyedRotationImages\finalExplosion19.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalExplosion2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipDestroyedRotationImages\finalExplosion2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalExplosion20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipDestroyedRotationImages\finalExplosion20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalExplosion21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipDestroyedRotationImages\finalExplosion21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalExplosion22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipDestroyedRotationImages\finalExplosion22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalExplosion23" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipDestroyedRotationImages\finalExplosion23.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalExplosion24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipDestroyedRotationImages\finalExplosion24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalExplosion25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipDestroyedRotationImages\finalExplosion25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalExplosion26" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipDestroyedRotationImages\finalExplosion26.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalExplosion27" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipDestroyedRotationImages\finalExplosion27.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalExplosion28" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipDestroyedRotationImages\finalExplosion28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalExplosion29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipDestroyedRotationImages\finalExplosion29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalExplosion3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipDestroyedRotationImages\finalExplosion3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalExplosion30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipDestroyedRotationImages\finalExplosion30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalExplosion31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipDestroyedRotationImages\finalExplosion31.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalExplosion32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipDestroyedRotationImages\finalExplosion32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalExplosion33" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipDestroyedRotationImages\finalExplosion33.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalExplosion34" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipDestroyedRotationImages\finalExplosion34.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalExplosion35" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipDestroyedRotationImages\finalExplosion35.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalExplosion36" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipDestroyedRotationImages\finalExplosion36.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalExplosion4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipDestroyedRotationImages\finalExplosion4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalExplosion5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipDestroyedRotationImages\finalExplosion5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalExplosion6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipDestroyedRotationImages\finalExplosion6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalExplosion7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipDestroyedRotationImages\finalExplosion7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalExplosion8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipDestroyedRotationImages\finalExplosion8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finalExplosion9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipDestroyedRotationImages\finalExplosion9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fire1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\fireRotationImages\fire1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fire10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\fireRotationImages\fire10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fire11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\fireRotationImages\fire11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fire12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\fireRotationImages\fire12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fire13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\fireRotationImages\fire13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fire14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\fireRotationImages\fire14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fire15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\fireRotationImages\fire15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fire16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\fireRotationImages\fire16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fire17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\fireRotationImages\fire17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fire18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\fireRotationImages\fire18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fire19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\fireRotationImages\fire19.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fire2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\fireRotationImages\fire2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fire20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\fireRotationImages\fire20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fire21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\fireRotationImages\fire21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fire22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\fireRotationImages\fire22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fire23" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\fireRotationImages\fire23.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fire24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\fireRotationImages\fire24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fire25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\fireRotationImages\fire25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fire26" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\fireRotationImages\fire26.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fire27" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\fireRotationImages\fire27.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fire28" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\fireRotationImages\fire28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fire29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\fireRotationImages\fire29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fire3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\fireRotationImages\fire3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fire30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\fireRotationImages\fire30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fire4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\fireRotationImages\fire4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fire5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\fireRotationImages\fire5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fire6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\fireRotationImages\fire6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fire7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\fireRotationImages\fire7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fire8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\fireRotationImages\fire8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fire9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\fireRotationImages\fire9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="frigate" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ImageResources\vesselImages\frigate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -229,6 +487,96 @@
   <data name="minizeButtonImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ImageResources\buttonsImages\minizeButtonImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="missile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\weaponsImages\missile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleExplosion0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleExplosionRotationImages\MissisleExplosion0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleExplosion1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleExplosionRotationImages\MissisleExplosion1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleExplosion10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleExplosionRotationImages\MissisleExplosion10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleExplosion11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleExplosionRotationImages\MissisleExplosion11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleExplosion12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleExplosionRotationImages\MissisleExplosion12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleExplosion13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleExplosionRotationImages\MissisleExplosion13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleExplosion14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleExplosionRotationImages\MissisleExplosion14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleExplosion15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleExplosionRotationImages\MissisleExplosion15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleExplosion16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleExplosionRotationImages\MissisleExplosion16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleExplosion17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleExplosionRotationImages\MissisleExplosion17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleExplosion18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleExplosionRotationImages\MissisleExplosion18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleExplosion19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleExplosionRotationImages\MissisleExplosion19.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleExplosion2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleExplosionRotationImages\MissisleExplosion2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleExplosion20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleExplosionRotationImages\MissisleExplosion20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleExplosion21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleExplosionRotationImages\MissisleExplosion21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleExplosion22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleExplosionRotationImages\MissisleExplosion22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleExplosion23" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleExplosionRotationImages\MissisleExplosion23.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleExplosion24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleExplosionRotationImages\MissisleExplosion24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleExplosion25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleExplosionRotationImages\MissisleExplosion25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleExplosion26" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleExplosionRotationImages\MissisleExplosion26.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleExplosion27" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleExplosionRotationImages\MissisleExplosion27.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleExplosion28" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleExplosionRotationImages\MissisleExplosion28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleExplosion3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleExplosionRotationImages\MissisleExplosion3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleExplosion4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleExplosionRotationImages\MissisleExplosion4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleExplosion5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleExplosionRotationImages\MissisleExplosion5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleExplosion6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleExplosionRotationImages\MissisleExplosion6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleExplosion7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleExplosionRotationImages\MissisleExplosion7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleExplosion8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleExplosionRotationImages\MissisleExplosion8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleExplosion9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleExplosionRotationImages\MissisleExplosion9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="missisleExplosionSound" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\AudioResources\missisleExplosionSound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -244,11 +592,140 @@
   <data name="missisleTorpedoSound" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\AudioResources\missisleTorpedoSound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="MissisleWater0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleWaterRotationImages\MissisleWater0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleWater1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleWaterRotationImages\MissisleWater1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleWater10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleWaterRotationImages\MissisleWater10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleWater11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleWaterRotationImages\MissisleWater11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleWater12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleWaterRotationImages\MissisleWater12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleWater13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleWaterRotationImages\MissisleWater13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleWater14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleWaterRotationImages\MissisleWater14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleWater15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleWaterRotationImages\MissisleWater15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleWater16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleWaterRotationImages\MissisleWater16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleWater17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleWaterRotationImages\MissisleWater17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleWater18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleWaterRotationImages\MissisleWater18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleWater19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleWaterRotationImages\MissisleWater19.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleWater2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleWaterRotationImages\MissisleWater2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleWater20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleWaterRotationImages\MissisleWater20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleWater21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleWaterRotationImages\MissisleWater21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleWater22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleWaterRotationImages\MissisleWater22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleWater23" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleWaterRotationImages\MissisleWater23.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleWater24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleWaterRotationImages\MissisleWater24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleWater25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleWaterRotationImages\MissisleWater25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleWater26" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleWaterRotationImages\MissisleWater26.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleWater27" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleWaterRotationImages\MissisleWater27.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleWater28" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleWaterRotationImages\MissisleWater28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleWater3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleWaterRotationImages\MissisleWater3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleWater4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleWaterRotationImages\MissisleWater4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleWater5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleWaterRotationImages\MissisleWater5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleWater6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleWaterRotationImages\MissisleWater6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleWater7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleWaterRotationImages\MissisleWater7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleWater8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleWaterRotationImages\MissisleWater8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MissisleWater9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\missisleWaterRotationImages\MissisleWater9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="myFleetAircraftCarrierSunk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipPanelsStatusImages\myFleetBigShips\myFleetAircraftCarrierSunk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="myFleetAircraftCarrier_BattleDestroyerSunk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipPanelsStatusImages\myFleetBigShips\myFleetAircraftCarrier&amp;BattleDestroyerSunk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="myFleetAircraftCarrier_BattleShipSunk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipPanelsStatusImages\myFleetBigShips\myFleetAircraftCarrier&amp;BattleShipSunk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="myFleetAircraftCarrier_BattleShip_DestroyerSunk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipPanelsStatusImages\myFleetBigShips\myFleetAircraftCarrier&amp;BattleShip&amp;DestroyerSunk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="myFleetBattleShipSunk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipPanelsStatusImages\myFleetBigShips\myFleetBattleShipSunk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="myFleetBattleShip_DestroyerSunk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipPanelsStatusImages\myFleetBigShips\myFleetBattleShip&amp;DestroyerSunk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="myFleetCorvetteSunk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipPanelsStatusImages\myFleetSmallShips\myFleetCorvetteSunk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="myFleetCorvette_FrigateSunk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipPanelsStatusImages\myFleetSmallShips\myFleetCorvette&amp;FrigateSunk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="myFleetDestroyerSunk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipPanelsStatusImages\myFleetBigShips\myFleetDestroyerSunk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="myFleetFrigateSunk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipPanelsStatusImages\myFleetSmallShips\myFleetFrigateSunk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="myFleetPanelBiggerShips" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ImageResources\shipPanelsStatusImages\myFleetBigShips\myFleetPanelBiggerShips.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="myFleetPanelSmallerShips" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ImageResources\shipPanelsStatusImages\myFleetSmallShips\myFleetPanelSmallerShips.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="myFleetSubmarineSunk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipPanelsStatusImages\myFleetSmallShips\myFleetSubmarineSunk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="myFleetSubmarine_CorvetteSunk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipPanelsStatusImages\myFleetSmallShips\myFleetSubmarine&amp;CorvetteSunk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="myFleetSubmarine_Corvette_FrigateSunk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipPanelsStatusImages\myFleetSmallShips\myFleetSubmarine&amp;Corvette&amp;FrigateSunk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="myFleetSubmarine_FrigateSunk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\shipPanelsStatusImages\myFleetSmallShips\myFleetSubmarine&amp;FrigateSunk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="occupiedAreaTile" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ImageResources\occupiedAreaTile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -399,6 +876,9 @@
   </data>
   <data name="tileBackgroundShipSunked" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ImageResources\shootingAreaTiles\tileBackgroundShipSunked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="torpedo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ImageResources\weaponsImages\torpedo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="yesButtonImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ImageResources\buttonsImages\yesButtonImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

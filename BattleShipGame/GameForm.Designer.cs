@@ -31,36 +31,38 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GameForm));
             this.backroungImageChangerTimer = new System.Windows.Forms.Timer(this.components);
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.mySmallShipsPanel = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.myBigShipsPanel = new System.Windows.Forms.Panel();
+            this.enemySmallShipsPanel = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.enemyBigShipsPanel = new System.Windows.Forms.Panel();
             this.showShootingFormButton = new BattleShipGame.CustomControls.CustomButton();
             this.cheatButton = new BattleShipGame.CustomControls.CustomButton();
             this.checkIfShootingFormIsMinizedTimer = new System.Windows.Forms.Timer(this.components);
-            this.enemyTurnCheckerTimer = new System.Windows.Forms.Timer(this.components);
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.playerAnimationAndEnemyTurnTimer = new System.Windows.Forms.Timer(this.components);
+            this.staticEffectsTimer = new System.Windows.Forms.Timer(this.components);
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.winnerTimer = new System.Windows.Forms.Timer(this.components);
+            this.mySmallShipsPanel.SuspendLayout();
+            this.enemySmallShipsPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // backroungImageChangerTimer
             // 
-            this.backroungImageChangerTimer.Enabled = true;
             this.backroungImageChangerTimer.Tick += new System.EventHandler(this.backroungImageChangerTimer_Tick);
             // 
-            // panel1
+            // mySmallShipsPanel
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.panel1.BackgroundImage = global::BattleShipGame.Properties.Resources.myFleetPanelSmallerShips;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(-1, 370);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(212, 190);
-            this.panel1.TabIndex = 0;
+            this.mySmallShipsPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.mySmallShipsPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("mySmallShipsPanel.BackgroundImage")));
+            this.mySmallShipsPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.mySmallShipsPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mySmallShipsPanel.Controls.Add(this.label1);
+            this.mySmallShipsPanel.Location = new System.Drawing.Point(-1, 370);
+            this.mySmallShipsPanel.Name = "mySmallShipsPanel";
+            this.mySmallShipsPanel.Size = new System.Drawing.Size(212, 190);
+            this.mySmallShipsPanel.TabIndex = 0;
             // 
             // label1
             // 
@@ -74,28 +76,28 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Your Fleet Status";
             // 
-            // panel3
+            // myBigShipsPanel
             // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Location = new System.Drawing.Point(210, 400);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(211, 160);
-            this.panel3.TabIndex = 2;
+            this.myBigShipsPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.myBigShipsPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("myBigShipsPanel.BackgroundImage")));
+            this.myBigShipsPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.myBigShipsPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.myBigShipsPanel.Location = new System.Drawing.Point(210, 400);
+            this.myBigShipsPanel.Name = "myBigShipsPanel";
+            this.myBigShipsPanel.Size = new System.Drawing.Size(211, 160);
+            this.myBigShipsPanel.TabIndex = 2;
             // 
-            // panel2
+            // enemySmallShipsPanel
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackgroundImage = global::BattleShipGame.Properties.Resources.enemyFleetPanelSmallerShips;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(708, 370);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(212, 190);
-            this.panel2.TabIndex = 3;
+            this.enemySmallShipsPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.enemySmallShipsPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("enemySmallShipsPanel.BackgroundImage")));
+            this.enemySmallShipsPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.enemySmallShipsPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.enemySmallShipsPanel.Controls.Add(this.label2);
+            this.enemySmallShipsPanel.Location = new System.Drawing.Point(708, 370);
+            this.enemySmallShipsPanel.Name = "enemySmallShipsPanel";
+            this.enemySmallShipsPanel.Size = new System.Drawing.Size(212, 190);
+            this.enemySmallShipsPanel.TabIndex = 3;
             // 
             // label2
             // 
@@ -109,16 +111,16 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Enemy Fleet Status";
             // 
-            // panel4
+            // enemyBigShipsPanel
             // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel4.BackgroundImage = global::BattleShipGame.Properties.Resources.enemyFleetPanelBigShips;
-            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Location = new System.Drawing.Point(497, 400);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(212, 160);
-            this.panel4.TabIndex = 4;
+            this.enemyBigShipsPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.enemyBigShipsPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("enemyBigShipsPanel.BackgroundImage")));
+            this.enemyBigShipsPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.enemyBigShipsPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.enemyBigShipsPanel.Location = new System.Drawing.Point(497, 400);
+            this.enemyBigShipsPanel.Name = "enemyBigShipsPanel";
+            this.enemyBigShipsPanel.Size = new System.Drawing.Size(212, 160);
+            this.enemyBigShipsPanel.TabIndex = 4;
             // 
             // showShootingFormButton
             // 
@@ -170,10 +172,32 @@
             this.checkIfShootingFormIsMinizedTimer.Enabled = true;
             this.checkIfShootingFormIsMinizedTimer.Tick += new System.EventHandler(this.checkIfShootingFormIsMinizedTimer_Tick);
             // 
-            // enemyTurnCheckerTimer
+            // playerAnimationAndEnemyTurnTimer
             // 
-            this.enemyTurnCheckerTimer.Enabled = true;
-            this.enemyTurnCheckerTimer.Tick += new System.EventHandler(this.enemyTurnCheckerTimer_Tick);
+            this.playerAnimationAndEnemyTurnTimer.Enabled = true;
+            this.playerAnimationAndEnemyTurnTimer.Interval = 25;
+            this.playerAnimationAndEnemyTurnTimer.Tick += new System.EventHandler(this.enemyTurnCheckerTimer_Tick);
+            // 
+            // staticEffectsTimer
+            // 
+            this.staticEffectsTimer.Enabled = true;
+            this.staticEffectsTimer.Tick += new System.EventHandler(this.staticEffectsTimer_Tick);
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.Transparent;
+            this.panel5.BackgroundImage = global::BattleShipGame.Properties.Resources.airplane;
+            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel5.Location = new System.Drawing.Point(-55, 230);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(57, 37);
+            this.panel5.TabIndex = 7;
+            // 
+            // winnerTimer
+            // 
+            this.winnerTimer.Enabled = true;
+            this.winnerTimer.Interval = 25;
+            this.winnerTimer.Tick += new System.EventHandler(this.winnerTimer_Tick);
             // 
             // GameForm
             // 
@@ -182,19 +206,20 @@
             this.BackgroundImage = global::BattleShipGame.Properties.Resources.surface0;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(920, 560);
+            this.Controls.Add(this.panel5);
             this.Controls.Add(this.cheatButton);
             this.Controls.Add(this.showShootingFormButton);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.enemyBigShipsPanel);
+            this.Controls.Add(this.enemySmallShipsPanel);
+            this.Controls.Add(this.myBigShipsPanel);
+            this.Controls.Add(this.mySmallShipsPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "GameForm";
             this.Text = "GameForm";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.mySmallShipsPanel.ResumeLayout(false);
+            this.mySmallShipsPanel.PerformLayout();
+            this.enemySmallShipsPanel.ResumeLayout(false);
+            this.enemySmallShipsPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -202,15 +227,18 @@
         #endregion
 
         private System.Windows.Forms.Timer backroungImageChangerTimer;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel mySmallShipsPanel;
+        private System.Windows.Forms.Panel myBigShipsPanel;
+        private System.Windows.Forms.Panel enemySmallShipsPanel;
+        private System.Windows.Forms.Panel enemyBigShipsPanel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private CustomControls.CustomButton showShootingFormButton;
         private CustomControls.CustomButton cheatButton;
         private System.Windows.Forms.Timer checkIfShootingFormIsMinizedTimer;
-        private System.Windows.Forms.Timer enemyTurnCheckerTimer;
+        private System.Windows.Forms.Timer playerAnimationAndEnemyTurnTimer;
+        private System.Windows.Forms.Timer staticEffectsTimer;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Timer winnerTimer;
     }
 }

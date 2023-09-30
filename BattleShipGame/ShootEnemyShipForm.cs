@@ -2,7 +2,9 @@
 using BattleShipGame.Properties;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
+using System.Media;
 using System.Windows.Forms;
 
 namespace BattleShipGame
@@ -10,6 +12,7 @@ namespace BattleShipGame
     public partial class ShootEnemyShipForm : Form
     {
         private List<Panel> tilePanels = new List<Panel>();
+        private SoundPlayer SoundPlayer = new SoundPlayer();
         public ShootEnemyShipForm()
         {
             InitializeComponent();
@@ -19,6 +22,8 @@ namespace BattleShipGame
 
         private void minizeButton_Click(object sender, EventArgs e)
         {
+            SoundPlayer.Stream = Resources.buttonClickSound;
+            SoundPlayer.Play();
             this.Hide();
         }
 
@@ -116,21 +121,46 @@ namespace BattleShipGame
                 return;
 
             tilePanelAttributes.IsHit = true;
-            foreach (VesselInControlPanel vesselInControlPanel in StaticData.EnemyFormation)
+            panel.Tag = tilePanelAttributes;
+            panel.BackColor = Color.Transparent;
+            StaticData.EnemyTilePanelId = tilePanelAttributes.PanelId;
+            foreach (Vessel vessel in StaticData.EnemyFormation)
             {
-                Vessel vessel = new Vessel(vesselInControlPanel);
                 if (vessel.PanelsItOccupies.Contains(tilePanelAttributes.PanelId))
                 {
-                    panel.BackgroundImage = Resources.tileBackgroundHit;
+                    vessel.TilesLeft -= 1;
+                    panel.BackgroundImage = vessel.TilesLeft != 0 ? Resources.tileBackgroundHit : Resources.tileBackgroundShipSunked;
+                    if (vessel.TilesLeft == 0)
+                        setTilesForDestructedShip(vessel);
+                    StaticData.EnemyWasDestroyed = vessel.TilesLeft == 0;
+                    StaticData.EnemyWasHit = true;
+                    StaticData.EnemyTurn = true;
                     this.Hide();
                     return;
                 }
             }
             panel.BackgroundImage = Resources.tileBackgroundMiss;
+            StaticData.EnemyWasDestroyed = false;
+            StaticData.EnemyWasHit = false;
             StaticData.EnemyTurn = true;
             this.Hide();
             // Your click event code here
             // You can access panel.Tag to get the associated attributes
+        }
+
+        private void setTilesForDestructedShip(Vessel vessel)
+        {
+            foreach (int panelId in vessel.PanelsItOccupies)
+            {
+                tilePanels[panelId].BackgroundImage = Resources.tileBackgroundShipSunked;
+            }
+            foreach (int panelId in vessel.NeighboursItOccupies)
+            {
+                TilePanelAttributes tilePanelAttributes = (TilePanelAttributes)tilePanels[panelId].Tag;
+                tilePanelAttributes.IsHit = true;
+                tilePanels[panelId].Tag = tilePanelAttributes;
+                tilePanels[panelId].BackgroundImage = Resources.tileBackgroundMiss;
+            }
         }
     }
 }

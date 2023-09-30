@@ -34,21 +34,27 @@ namespace BattleShipGame
             InitializeComponent();
             aircraftCarrierDetails.VesselName = "aircraftCarrier";
             aircraftCarrierDetails.VesselSize = 5;
+            aircraftCarrierDetails.TilesLeft = 10;
             allVessels.Add(aircraftCarrierDetails);
             battleShipDetails.VesselName = "battleShip";
             battleShipDetails.VesselSize = 6;
+            battleShipDetails.TilesLeft = 6;
             allVessels.Add(battleShipDetails);
             destroyerDetails.VesselName = "destroyer";
             destroyerDetails.VesselSize = 5;
+            destroyerDetails.TilesLeft = 5;
             allVessels.Add(destroyerDetails);
             frigateDetails.VesselName = "frigate";
             frigateDetails.VesselSize = 4;
+            frigateDetails.TilesLeft = 4;
             allVessels.Add(frigateDetails);
             submarineDetails.VesselName = "submarine";
             submarineDetails.VesselSize = 4;
+            submarineDetails.TilesLeft = 4;
             allVessels.Add(submarineDetails);
             corvetteDetails.VesselName = "corvette";
             corvetteDetails.VesselSize = 3;
+            corvetteDetails.TilesLeft = 3;
             allVessels.Add(corvetteDetails);
             this.ControlBox = false;
             this.DoubleBuffered = true;
@@ -100,7 +106,7 @@ namespace BattleShipGame
 
             aircraftCarrierDetails.MovingPictureBox = pictureBoxClickHelper(sender, aircraftCarrierDetails.MovingPictureBox);
 
-            aircraftCarrierDetails.MovingPictureBox.MouseUp += AircraftCarrierMovingPictureBox_MouseDown;
+            aircraftCarrierDetails.MovingPictureBox.MouseUp += AircraftCarrierMovingPictureBox_MouseUp;
             aircraftCarrierDetails.MovingPictureBox.BackgroundImage = Resources.aircraftCarrier;
             aircraftCarrierDetails.IsBeingPicked = true;
             
@@ -115,7 +121,7 @@ namespace BattleShipGame
 
             battleShipDetails.MovingPictureBox = pictureBoxClickHelper(sender, battleShipDetails.MovingPictureBox);
 
-            battleShipDetails.MovingPictureBox.MouseUp += BattleShipMovingPictureBox_MouseDown;
+            battleShipDetails.MovingPictureBox.MouseUp += BattleShipMovingPictureBox_MouseUp;
             battleShipDetails.MovingPictureBox.BackgroundImage = Resources.battleShip;
             battleShipDetails.IsBeingPicked = true;
 
@@ -130,7 +136,7 @@ namespace BattleShipGame
 
             destroyerDetails.MovingPictureBox = pictureBoxClickHelper(sender, destroyerDetails.MovingPictureBox);
 
-            destroyerDetails.MovingPictureBox.MouseUp += DestroyerMovingPictureBox_MouseDown;
+            destroyerDetails.MovingPictureBox.MouseUp += DestroyerMovingPictureBox_MouseUp;
             destroyerDetails.MovingPictureBox.BackgroundImage = Resources.destroyer;
             destroyerDetails.IsBeingPicked = true;
 
@@ -145,7 +151,7 @@ namespace BattleShipGame
 
             frigateDetails.MovingPictureBox = pictureBoxClickHelper(sender, frigateDetails.MovingPictureBox);
 
-            frigateDetails.MovingPictureBox.MouseUp += FrigateMovingPictureBox_MouseDown;
+            frigateDetails.MovingPictureBox.MouseUp += FrigateMovingPictureBox_MouseUp;
             frigateDetails.MovingPictureBox.BackgroundImage = Resources.frigate;
             frigateDetails.IsBeingPicked = true;
 
@@ -160,7 +166,7 @@ namespace BattleShipGame
 
             submarineDetails.MovingPictureBox = pictureBoxClickHelper(sender, submarineDetails.MovingPictureBox);
 
-            submarineDetails.MovingPictureBox.MouseUp += SubmarineMovingPictureBox_MouseDown;
+            submarineDetails.MovingPictureBox.MouseUp += SubmarineMovingPictureBox_MouseUp;
             submarineDetails.MovingPictureBox.BackgroundImage = Resources.submarine;
             submarineDetails.IsBeingPicked = true;
 
@@ -175,7 +181,7 @@ namespace BattleShipGame
 
             corvetteDetails.MovingPictureBox = pictureBoxClickHelper(sender, corvetteDetails.MovingPictureBox);
 
-            corvetteDetails.MovingPictureBox.MouseUp += CorvetteMovingPictureBox_MouseDown;
+            corvetteDetails.MovingPictureBox.MouseUp += CorvetteMovingPictureBox_MouseUp;
             corvetteDetails.MovingPictureBox.BackgroundImage = Resources.corvette;
             corvetteDetails.IsBeingPicked = true;
 
@@ -199,42 +205,42 @@ namespace BattleShipGame
             return movingPicture;
         }
 
-        private void AircraftCarrierMovingPictureBox_MouseDown(object sender, MouseEventArgs e)
+        private void AircraftCarrierMovingPictureBox_MouseUp(object sender, MouseEventArgs e)
         {
             aircraftCarrierDetails = movingPictureHelper(aircraftCarrierDetails);
             if(!aircraftCarrierDetails.IsBeingPicked & !aircraftCarrierDetails.IsPlaced)
                 aircraftCarrierPictureBox.BackgroundImage = Resources.aircraftCarrierWithGreenSkin;
         }
 
-        private void BattleShipMovingPictureBox_MouseDown(object sender, MouseEventArgs e)
+        private void BattleShipMovingPictureBox_MouseUp(object sender, MouseEventArgs e)
         {
             battleShipDetails = movingPictureHelper(battleShipDetails);
             if (!battleShipDetails.IsBeingPicked & !battleShipDetails.IsPlaced)
                 battleShipPictureBox.BackgroundImage = Resources.battleShipWithGreenSkin;
         }
 
-        private void DestroyerMovingPictureBox_MouseDown(object sender, MouseEventArgs e)
+        private void DestroyerMovingPictureBox_MouseUp(object sender, MouseEventArgs e)
         {
             destroyerDetails = movingPictureHelper(destroyerDetails);
             if (!destroyerDetails.IsBeingPicked & !destroyerDetails.IsPlaced)
                 destroyerPictureBox.BackgroundImage = Resources.destroyerWithGreenSKin;
         }
 
-        private void FrigateMovingPictureBox_MouseDown(object sender, MouseEventArgs e)
+        private void FrigateMovingPictureBox_MouseUp(object sender, MouseEventArgs e)
         {
             frigateDetails = movingPictureHelper(frigateDetails);
             if (!frigateDetails.IsBeingPicked & !frigateDetails.IsPlaced)
                 frigatePictureBox.BackgroundImage = Resources.frigateWithGreenSkin;
         }
 
-        private void SubmarineMovingPictureBox_MouseDown(object sender, MouseEventArgs e)
+        private void SubmarineMovingPictureBox_MouseUp(object sender, MouseEventArgs e)
         {
             submarineDetails = movingPictureHelper(submarineDetails);
             if (!submarineDetails.IsBeingPicked & !submarineDetails.IsPlaced)
                 submarinePictureBox.BackgroundImage = Resources.submarineWithGreenSkin;
         }
 
-        private void CorvetteMovingPictureBox_MouseDown(object sender, MouseEventArgs e)
+        private void CorvetteMovingPictureBox_MouseUp(object sender, MouseEventArgs e)
         {
             corvetteDetails = movingPictureHelper(corvetteDetails);
             if (!corvetteDetails.IsBeingPicked & !corvetteDetails.IsPlaced)
@@ -556,42 +562,42 @@ namespace BattleShipGame
                 switch (vessel.VesselName)
                 {
                     case "aircraftCarrier":
-                        vessel.MovingPictureBox.MouseUp += AircraftCarrierMovingPictureBox_MouseDown;
+                        vessel.MovingPictureBox.MouseUp += AircraftCarrierMovingPictureBox_MouseUp;
                         aircraftCarrierDetails.MovingPictureBox.BackgroundImage = vessel.IsHorizontallyAligned ?
                             Resources.aircraftCarrierHorizontal : Resources.aircraftCarrier;
                         aircraftCarrierDetails.MovingPictureBox.Size = aircraftCarrierPictureBox.Size;
                         aircraftCarrierPictureBox.BackgroundImage = Resources.aircraftCarrierShape;
                         break;
                     case "battleShip":
-                        vessel.MovingPictureBox.MouseUp += BattleShipMovingPictureBox_MouseDown;
+                        vessel.MovingPictureBox.MouseUp += BattleShipMovingPictureBox_MouseUp;
                         battleShipDetails.MovingPictureBox.BackgroundImage = vessel.IsHorizontallyAligned ? 
                             Resources.battleShipHorizontal : Resources.battleShip;
                         battleShipDetails.MovingPictureBox.Size = battleShipPictureBox.Size;
                         battleShipPictureBox.BackgroundImage = Resources.battleShipShape;
                         break;
                     case "destroyer":
-                        vessel.MovingPictureBox.MouseUp += DestroyerMovingPictureBox_MouseDown;
+                        vessel.MovingPictureBox.MouseUp += DestroyerMovingPictureBox_MouseUp;
                         destroyerDetails.MovingPictureBox.BackgroundImage = vessel.IsHorizontallyAligned ? 
                            Resources.destroyerHorizontal : Resources.destroyer;
                         destroyerDetails.MovingPictureBox.Size = destroyerPictureBox.Size;
                         destroyerPictureBox.BackgroundImage = Resources.destroyerShape;
                         break;
                     case "frigate":
-                        vessel.MovingPictureBox.MouseUp += FrigateMovingPictureBox_MouseDown;
+                        vessel.MovingPictureBox.MouseUp += FrigateMovingPictureBox_MouseUp;
                         frigateDetails.MovingPictureBox.BackgroundImage = vessel.IsHorizontallyAligned ? 
                             Resources.frigateHorizontal : Resources.frigate;
                         frigateDetails.MovingPictureBox.Size = frigatePictureBox.Size;
                         frigatePictureBox.BackgroundImage = Resources.frigateShape;
                         break;
                     case "submarine":
-                        vessel.MovingPictureBox.MouseUp += SubmarineMovingPictureBox_MouseDown;
+                        vessel.MovingPictureBox.MouseUp += SubmarineMovingPictureBox_MouseUp;
                         submarineDetails.MovingPictureBox.BackgroundImage = vessel.IsHorizontallyAligned ? 
                            Resources.submarineHorizontal : Resources.submarine;
                         submarineDetails.MovingPictureBox.Size = submarinePictureBox.Size;
                         submarinePictureBox.BackgroundImage = Resources.submarineShape;
                         break;
                     case "corvette":
-                        vessel.MovingPictureBox.MouseUp += CorvetteMovingPictureBox_MouseDown;
+                        vessel.MovingPictureBox.MouseUp += CorvetteMovingPictureBox_MouseUp;
                         corvetteDetails.MovingPictureBox.BackgroundImage = vessel.IsHorizontallyAligned ? 
                            Resources.corvetteHorizontal : Resources.corvette;
                         corvetteDetails.MovingPictureBox.Size = corvettePictureBox.Size;
@@ -741,32 +747,46 @@ namespace BattleShipGame
         {
             SoundPlayer.Stream = Resources.buttonClickSound;
             SoundPlayer.Play();
-            StaticData.Formation = allVessels;
+            aircraftCarrierDetails.MovingPictureBox.MouseUp -= AircraftCarrierMovingPictureBox_MouseUp;
+            battleShipDetails.MovingPictureBox.MouseUp -= BattleShipMovingPictureBox_MouseUp;
+            destroyerDetails.MovingPictureBox.MouseUp -= DestroyerMovingPictureBox_MouseUp;
+            frigateDetails.MovingPictureBox.MouseUp -= FrigateMovingPictureBox_MouseUp;
+            submarineDetails.MovingPictureBox.MouseUp -= SubmarineMovingPictureBox_MouseUp;
+            corvetteDetails.MovingPictureBox.MouseUp -= CorvetteMovingPictureBox_MouseUp;
+            foreach (VesselInControlPanel vesselInControl in allVessels)
+                StaticData.Formation.Add(new Vessel(vesselInControl));
+            
 
             List<VesselInControlPanel> enemyVessels = new List<VesselInControlPanel>();
             VesselInControlPanel enemyAircraftCarrierDetails = new VesselInControlPanel();
             enemyAircraftCarrierDetails.VesselName = "aircraftCarrier";
             enemyAircraftCarrierDetails.VesselSize = 5;
+            enemyAircraftCarrierDetails.TilesLeft = 10;
             enemyVessels.Add(enemyAircraftCarrierDetails);
             VesselInControlPanel enemyBattleShipDetails = new VesselInControlPanel();
             enemyBattleShipDetails.VesselName = "battleShip";
             enemyBattleShipDetails.VesselSize = 6;
+            enemyBattleShipDetails.TilesLeft = 6;
             enemyVessels.Add(enemyBattleShipDetails);
             VesselInControlPanel enemyDestroyerDetails = new VesselInControlPanel();
             enemyDestroyerDetails.VesselName = "destroyer";
             enemyDestroyerDetails.VesselSize = 5;
+            enemyDestroyerDetails.TilesLeft = 5;
             enemyVessels.Add(enemyDestroyerDetails);
             VesselInControlPanel enemyFrigateDetails = new VesselInControlPanel();
             enemyFrigateDetails.VesselName = "frigate";
             enemyFrigateDetails.VesselSize = 4;
+            enemyFrigateDetails.TilesLeft = 4;
             enemyVessels.Add(enemyFrigateDetails);
             VesselInControlPanel enemySubmarineDetails = new VesselInControlPanel();
             enemySubmarineDetails.VesselName = "submarine";
             enemySubmarineDetails.VesselSize = 4;
+            enemySubmarineDetails.TilesLeft = 4;
             enemyVessels.Add(enemySubmarineDetails);
             VesselInControlPanel enemyCorvetteDetails = new VesselInControlPanel();
             enemyCorvetteDetails.VesselName = "corvette";
             enemyCorvetteDetails.VesselSize = 3;
+            enemyCorvetteDetails.TilesLeft = 3;
             enemyVessels.Add(enemyCorvetteDetails);
 
             tilePanels.ForEach(panel => {
@@ -844,7 +864,10 @@ namespace BattleShipGame
                     availablePositions.Remove(PanelId);
 
             }
-            StaticData.EnemyFormation = enemyVessels;
+            foreach (VesselInControlPanel vesselInControlPanel in enemyVessels)
+            {
+                StaticData.EnemyFormation.Add(vesselInControlPanel);
+            }
             StaticData.LoadGameForm = true;
         }
 

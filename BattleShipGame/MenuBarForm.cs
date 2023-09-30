@@ -73,11 +73,8 @@ namespace BattleShipGame
 
         private void openChildForm(Form childForm)
         {
-            /*if (activeForm != null && activeForm.UnsavedChangesDetected())
-                return;
             if (activeForm != null)
-                activeForm.Close();*/
-
+                activeForm.Close();
             activeForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
